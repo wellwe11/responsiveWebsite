@@ -1,0 +1,5 @@
+@media (1001px < width < 2000px) {
+  .imageAndTextWrapper h2 {
+    text-align: start;
+  }
+}

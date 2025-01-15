@@ -1,0 +1,49 @@
+@media (max-width: 500px) {
+  :root {
+    --inlineWidth: 320px;
+  }
+
+  .intro {
+  }
+
+  .introWrapper {
+    margin-top: 1.5rem;
+    width: 80vw;
+  }
+
+  .fakeImage {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    width: 110%;
+    height: 300px;
+    object-fit: fill;
+
+    justify-self: center;
+  }
+
+  .aboutMeWrapper h2 {
+    text-align: center;
+  }
+
+  .aboutMeWrapper h1 {
+    visibility: hidden;
+  }
+
+  .work {
+    align-items: center;
+  }
+
+  .project:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  .projectsWrapper {
+    width: 100%;
+  }
+
+  .project {
+    width: 80vw;
+  }
+}

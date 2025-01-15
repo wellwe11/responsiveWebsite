@@ -1,0 +1,46 @@
+@media (500px < width < 1000px) {
+  .introWrapper {
+    margin-top: 110px;
+
+    width: 80vw;
+  }
+
+  .imageAndTextWrapper {
+    margin-top: 30px;
+  }
+
+  .fakeImage {
+    float: left;
+    width: 45%;
+    height: 250px;
+    margin-top: -50px;
+    margin-left: -30px;
+
+    margin-right: 20px;
+    margin-bottom: 6.5px;
+
+    padding: 20px;
+  }
+
+  .fakeImage h1 {
+    visibility: hidden;
+  }
+
+  .aboutMeWrapper {
+    padding-inline: 10px;
+  }
+
+  .aboutMeWrapper h1 {
+    text-align: center;
+    margin-top: -70px;
+    padding-bottom: 30px;
+  }
+
+  .imageAndTextWrapper h2 {
+    text-align: center;
+  }
+
+  .project {
+    width: 40%;
+  }
+}

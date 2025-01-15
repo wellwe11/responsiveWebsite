@@ -1,0 +1,181 @@
+/* generic styles */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --themeColor: lightblue;
+
+  --inlineWidth: ;
+}
+
+p {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+/* header styles */
+
+.intro {
+  background-color: var(--themeColor);
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+}
+
+.introWrapper {
+  background-color: white;
+}
+
+.fakeImage {
+  background-color: wheat;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.aboutMeWrapper {
+}
+
+.header.icons {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  gap: 10px;
+
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header.icons > .icon {
+  height: 40px;
+  width: 40px;
+
+  background-color: black;
+}
+
+/* project styles */
+
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project:nth-child(1),
+.project:nth-child(2),
+.project:nth-child(3),
+.project:nth-child(4),
+.project:nth-child(5),
+.project:nth-child(6) {
+  margin-top: 20px;
+}
+
+.project {
+  margin: 10px;
+}
+
+.projectsWrapper > .project {
+}
+
+.project .proj.image {
+  height: 200px;
+
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project[data-item="0"] .proj.image {
+  background-color: burlywood;
+}
+
+.project[data-item="1"] .proj.image {
+  background-color: cornflowerblue;
+}
+
+.project[data-item="2"] .proj.image {
+  background-color: darkcyan;
+}
+
+.project[data-item="3"] .proj.image {
+  background-color: bisque;
+}
+
+.project[data-item="4"] .proj.image {
+  background-color: darkkhaki;
+}
+
+.project[data-item="5"] .proj.image {
+  background-color: cadetblue;
+}
+
+.project {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+
+  height: 370px;
+}
+
+.proj.wrapper {
+  border-radius: 10px;
+
+  padding-inline: 20px;
+}
+
+.proj.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.proj.main {
+}
+
+.proj.description {
+}
+
+.proj.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.proj.icons .icon {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+}
