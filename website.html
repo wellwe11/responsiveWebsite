@@ -15,9 +15,18 @@
         <div class="imageAndTextWrapper">
           <div class="fakeImage">
             <picture>
-              <source media="(max-width: 510px)" srcset="" />
-              <img src="./images/people.jpg" alt="" />
-              <h1>Robin Ryan</h1>
+              <img
+                srcset="
+                  ./images/beachLowRess.jpg,
+                  ./images/beachMediumRess.jpg 1.5x,
+                  ./images/beachHighRess.jpg   2x
+                "
+                src="./images/beachHighRess.jpg"
+              />
+
+              <div class="fakeImageText">
+                <h1>Robin Ryan</h1>
+              </div>
             </picture>
           </div>
 
@@ -28,37 +37,36 @@
             <div class="aboutMe">
               <h2>About me</h2>
               <caption>
-                Donec euismod aliquam justo, ac maximus nisl. Duis tempus eros a
-                lectus accumsan congue. Cras placerat, mauris non congue
-                sagittis, dolor est finibus mauris, nec lobortis dui augue nec
-                dui. Quisque rhoncus neque id varius posuere. Maecenas ut
-                suscipit massa. Nunc ut lacus ac eros pretium finibus id ut
-                eros. Maecenas vehicula justo non leo malesuada, id cursus nibh
-                tempus. Suspendisse non risus nulla. Donec euismod aliquam
-                justo, ac maximus nisl. Duis tempus eros a lectus accumsan
-                congue. Cras placerat, mauris non congue sagittis, dolor est
-                finibus mauris, nec lobortis dui augue nec dui. Quisque rhoncus
-                neque id varius posuere. Maecenas ut suscipit massa. Nunc ut
-                lacus ac eros pretium finibus id ut eros. Maecenas vehicula
-                justo non leo malesuada, id cursus nibh tempus. Suspendisse non
-                risus nulla.
+                <p>
+                  Donec euismod aliquam justo, ac maximus nisl. Duis tempus eros
+                  a lectus accumsan congue. Cras placerat, mauris non congue
+                  sagittis, dolor est finibus mauris, nec lobortis dui augue nec
+                  dui. Quisque rhoncus neque id varius posuere. Maecenas ut
+                  suscipit massa. Nunc ut lacus ac eros pretium finibus id ut
+                  eros. Maecenas vehicula justo non leo malesuada, id cursus
+                  nibh tempus. Suspendisse non risus nulla. Donec euismod
+                  aliquam justo, ac maximus nisl. Duis tempus eros a lectus
+                  accumsan congue. Cras placerat, mauris non congue sagittis,
+                  dolor est finibus mauris, nec lobortis dui augue nec dui.
+                  Quisque rhoncus neque id varius posuere.
+                </p>
               </caption>
             </div>
+
+            <div class="header icons">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+              />
+
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+              />
+
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              />
+            </div>
           </section>
-        </div>
-
-        <div class="header icons">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-          />
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
-          />
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-          />
         </div>
       </div>
     </header>
@@ -280,7 +288,16 @@
           </div>
         </div>
         <div class="contact image">
-          <div class="footerFakeImage"></div>
+          <div class="footerFakeImage">
+            <img
+              srcset="
+                ./images/beachLowRess.jpg,
+                ./images/beachMediumRess.jpg 1.5x,
+                ./images/beachHighRess.jpg   2x
+              "
+              src="./images/beachHighRess.jpg"
+            />
+          </div>
         </div>
         <!-- <img src="" alt="" /> -->
       </section>

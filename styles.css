@@ -15,71 +15,63 @@ body {
 p {
 }
 
+p,
 h1,
 h2,
 h3,
 h4,
-h5 {
-}
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-h5 {
+h5,
+h6 {
+  word-spacing: 1.5px;
+  line-height: 1.3;
 }
 
 /* header styles */
 
 .intro {
-  background-color: var(--themeColor);
   width: 100vw;
 
   display: flex;
   justify-content: center;
+
+  background: rgb(129, 38, 0);
+  background: linear-gradient(
+    171deg,
+    rgba(129, 38, 0, 0.9346332282913166) 37%,
+    rgba(255, 255, 255, 1) 66%
+  );
 }
 
 .introWrapper {
-  background-color: white;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-color: white;
 }
 
 .fakeImage {
-  background-color: wheat;
-
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.fakeImage img {
-  object-fit: fill;
-}
-
 .aboutMeWrapper {
   padding-inline: 10px;
+
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.aboutMeWrapper h2 {
+  font-size: 46px;
+  font-weight: 100;
 }
 
 .header.icons {
-  display: flex;
-  justify-content: center;
   align-self: flex-end;
-
-  width: 100%;
 
   gap: 10px;
 
-  background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -96,14 +88,42 @@ h5 {
   display: flex;
   flex-direction: column;
 
-  margin-top: 40px;
   margin-bottom: 100px;
+}
+
+.workTitle h2 {
+  color: black;
+
+  font-size: 42px;
+  font-weight: 100;
 }
 
 .projectsWrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.project {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+
+  height: 370px;
+  min-height: fit-content;
+
+  margin: 10px;
+
+  text-align: center;
+}
+
+.project h2 {
+  color: white;
+
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.proj.name h4 {
+  color: black;
 }
 
 .project:nth-child(1),
@@ -113,10 +133,6 @@ h5 {
 .project:nth-child(5),
 .project:nth-child(6) {
   margin-top: 20px;
-}
-
-.project {
-  margin: 10px;
 }
 
 .project .proj.image {
@@ -153,12 +169,6 @@ h5 {
   background-color: cadetblue;
 }
 
-.project {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-
-  height: 370px;
-}
-
 .proj.wrapper {
   border-radius: 10px;
 
@@ -174,10 +184,9 @@ h5 {
   padding: 10px;
 }
 
-.proj.main {
-}
-
 .proj.description {
+  text-align: start;
+  font-size: 18px;
 }
 
 .proj.icons {
@@ -192,10 +201,30 @@ h5 {
 }
 
 footer {
-  background-color: var(--themeColor);
+  background-color: brown;
 }
 
-.contactInformation {
+footer p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+  font-weight: 100;
+}
+
+footer h1 {
+  font-size: 36px;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+footer p {
+  font-size: 16px;
 }
 
 .contact.main section {
@@ -218,8 +247,4 @@ footer {
 .footer.icons > img {
   height: 30px;
   width: 30px;
-}
-
-.footerFakeImage {
-  background-color: aquamarine;
 }

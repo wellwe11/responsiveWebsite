@@ -1,3 +1,44 @@
+@media (300px > width) {
+  .fakeImage h1 {
+    font-size: 50px;
+  }
+
+  .fakeImageText {
+    margin-top: -160px;
+    width: 100px;
+    height: 200px;
+    min-width: 80px;
+  }
+}
+
+@media (400px > width > 300px) {
+  .fakeImage h1 {
+    font-size: 60px;
+  }
+
+  .fakeImageText {
+    margin-left: 5px;
+    margin-top: -190px;
+    width: 100px;
+    height: 200px;
+    min-width: 80px;
+  }
+}
+
+@media (399px < width < 510px) {
+  .fakeImage h1 {
+    font-size: 70px;
+  }
+
+  .fakeImageText {
+    margin-top: -134px;
+    width: fit-content;
+    max-width: 380px;
+    height: 200px;
+    min-width: 80px;
+  }
+}
+
 @media (max-width: 510px) {
   :root {
     --inlineWidth: 320px;
@@ -20,29 +61,34 @@
 
     width: 110%;
     height: 300px;
+    text-align: center;
 
     justify-self: center;
   }
 
   .fakeImage img {
     object-fit: cover;
-    max-width: 100%;
+    width: 100%;
     height: 310px;
   }
 
   .fakeImage h1 {
-    position: absolute;
-    margin-top: -80px;
-    margin-left: 80px;
     color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 200;
+  }
+
+  .fakeImageText {
+    position: absolute;
   }
 
   .aboutMeWrapper h2 {
     text-align: center;
+    color: black;
   }
 
   .aboutMeWrapper h1 {
-    visibility: hidden;
+    display: none;
   }
 
   .work {
@@ -51,17 +97,23 @@
   }
 
   .project {
-    width: 75vw;
-    max-width: 300px;
+    width: 90vw;
+    max-width: 350px;
   }
 
   .project:nth-child(1) {
     margin-top: 0px;
   }
 
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
   .contactInformation {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .contact.main h1 {
@@ -79,9 +131,15 @@
   }
 
   .footerFakeImage {
-    height: 320px;
     width: 100vw;
+  }
 
+  .footerFakeImage img {
+    height: 220px;
+    width: 100%;
+
+    margin-bottom: -10px;
     margin-top: 20px;
+    object-fit: cover;
   }
 }
