@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
 }
 
 :root {
@@ -48,6 +49,10 @@ h5 {
 
 .introWrapper {
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .fakeImage {
@@ -57,12 +62,18 @@ h5 {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.fakeImage img {
+  object-fit: fill;
+}
+
 .aboutMeWrapper {
+  padding-inline: 10px;
 }
 
 .header.icons {
   display: flex;
   justify-content: center;
+  align-self: flex-end;
 
   width: 100%;
 
@@ -73,11 +84,10 @@ h5 {
   padding-bottom: 10px;
 }
 
-.header.icons > .icon {
-  height: 40px;
-  width: 40px;
-
-  background-color: black;
+.header.icons > img {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
 }
 
 /* project styles */
@@ -85,6 +95,9 @@ h5 {
 .work {
   display: flex;
   flex-direction: column;
+
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .projectsWrapper {
@@ -104,9 +117,6 @@ h5 {
 
 .project {
   margin: 10px;
-}
-
-.projectsWrapper > .project {
 }
 
 .project .proj.image {
@@ -160,6 +170,8 @@ h5 {
   justify-content: space-between;
   align-items: center;
   height: 30px;
+
+  padding: 10px;
 }
 
 .proj.main {
@@ -174,8 +186,40 @@ h5 {
   gap: 10px;
 }
 
-.proj.icons .icon {
+.proj.icons img {
   height: 20px;
   width: 20px;
-  background-color: black;
+}
+
+footer {
+  background-color: var(--themeColor);
+}
+
+.contactInformation {
+}
+
+.contact.main section {
+  margin-top: 40px;
+}
+
+.contact.main h1 {
+  margin-bottom: -20px;
+}
+
+.contact.main p {
+  margin-top: -17px;
+}
+
+.footer.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer.icons > img {
+  height: 30px;
+  width: 30px;
+}
+
+.footerFakeImage {
+  background-color: aquamarine;
 }

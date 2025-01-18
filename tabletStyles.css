@@ -1,8 +1,46 @@
-@media (500px < width < 1000px) {
+@media (509px < width < 800px) {
+  .workTitle {
+    width: 75vw;
+    min-width: 465px;
+  }
+
+  .projectsWrapper {
+    min-width: 500px;
+  }
+
+  .project {
+    margin: 15px;
+  }
+
+  .proj.wrapper {
+    padding-inline: 10px;
+  }
+}
+
+@media (800px < width < 1000px) {
+  .workTitle {
+    min-width: 76vw;
+    min-width: 560px;
+  }
+
+  .introWrapper {
+    width: 85vw;
+  }
+
+  .project {
+    margin: 30px;
+  }
+}
+
+@media (510px < width < 900px) {
+  .introWrapper {
+    width: 80vw;
+  }
+}
+
+@media (510px < width < 1000px) {
   .introWrapper {
     margin-top: 110px;
-
-    width: 80vw;
   }
 
   .imageAndTextWrapper {
@@ -12,8 +50,9 @@
   .fakeImage {
     float: left;
     width: 45%;
+    max-width: 300px;
     height: 250px;
-    margin-top: -50px;
+    margin-top: -100px;
     margin-left: -30px;
 
     margin-right: 20px;
@@ -26,21 +65,77 @@
     visibility: hidden;
   }
 
-  .aboutMeWrapper {
-    padding-inline: 10px;
-  }
-
-  .aboutMeWrapper h1 {
-    text-align: center;
-    margin-top: -70px;
-    padding-bottom: 30px;
-  }
-
   .imageAndTextWrapper h2 {
     text-align: center;
   }
 
+  .name.title {
+    text-align: center;
+    transform: translateY(-80px);
+  }
+
+  .aboutMeWrapper {
+    margin-top: -30px;
+  }
+
+  .aboutMe {
+    margin-top: -30px;
+  }
+
+  .header.icons {
+    visibility: hidden;
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+  }
+
+  .projectsWrapper {
+    text-align: start;
+  }
+
   .project {
-    width: 40%;
+    width: 36vw;
+    max-width: 300px;
+    min-width: 220px;
+
+    align-self: center;
+  }
+
+  .workTitle {
+    max-width: 670px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactInformation {
+    display: flex;
+  }
+
+  .contact.main {
+    width: 50%;
+    height: 70%;
+    padding-inline: 10px;
+    align-self: center;
+  }
+
+  .contact.image {
+    width: 50%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerFakeImage {
+    height: 80%;
+    width: 80%;
+    min-width: 230px;
   }
 }

@@ -1,5 +1,147 @@
-@media (1001px < width < 2000px) {
+@media (width < 1300px) {
+  .introWrapper,
+  .contactInformation {
+    width: 83vw;
+  }
+
+  .projectsWrapper {
+    width: 87vw;
+  }
+}
+
+@media (1299px < width) {
+  .introWrapper,
+  .contactInformation {
+    width: 1120px;
+  }
+
+  .projectsWrapper {
+    width: 1300px;
+  }
+}
+
+@media (1500px < width) {
+  .introWrapper,
+  .contactInformation {
+    width: 1150px;
+  }
+
+  .project {
+    margin: 20px;
+  }
+}
+
+@media (1600px < width) {
+  .introWrapper,
+  .contactInformation {
+    width: 1200px;
+  }
+
+  .projectsWrapper {
+    width: 1500px;
+  }
+
+  .project {
+    margin: 30px;
+  }
+}
+
+@media (999px < width) {
+  .introWrapper {
+    max-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    margin-bottom: 30px;
+  }
+
+  .imageAndTextWrapper {
+    display: flex;
+    max-height: 300px;
+  }
+
+  .fakeImage {
+    float: left;
+    width: 45%;
+    max-width: 330px;
+    height: 330px;
+    margin-left: -60px;
+
+    margin-bottom: 6.5px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    object-fit: fill;
+
+    z-index: 1;
+  }
+
   .imageAndTextWrapper h2 {
     text-align: start;
+  }
+
+  .name.title {
+    visibility: hidden;
+  }
+
+  .aboutMeWrapper {
+    width: 60%;
+    align-self: center;
+    max-height: 300px;
+  }
+
+  .header.icons {
+    justify-content: end;
+
+    padding-inline: 10px;
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+  }
+
+  .project {
+    width: 30%;
+    max-width: 355px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactInformation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact.main {
+    height: 70%;
+    width: 40%;
+    max-width: 300px;
+    padding-inline: 10px;
+    align-self: flex-start;
+    justify-content: center;
+  }
+
+  .contact.image {
+    width: 60%;
+    max-width: 800px;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .footerFakeImage {
+    height: 80%;
+    width: 100%;
   }
 }
